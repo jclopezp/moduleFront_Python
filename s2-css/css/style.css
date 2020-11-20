@@ -1,0 +1,49 @@
+*{
+    color: red;
+}
+
+header{
+    color: blueviolet;
+}
+
+article{
+    background-color: rgb(237, 198, 100);
+}
+
+.container-post{
+    border: 1px solid rgb(58, 39, 224);
+    background-color: blue;
+}
+
+.container-post{
+    background-color: rgb(61, 224, 39);
+}
+
+#post-unique{
+    background-color: pink;
+}
+
+.parrafo{
+    font-size: 25px;
+}
+
+/* selector descendinete, selecciona todos los span que se */
+.parrafo span{
+    color: black;
+}
+
+.element-change{
+    background-color: red;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+}
+
+.element-change-2{
+    background-color: rgb(35, 81, 165);
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+}

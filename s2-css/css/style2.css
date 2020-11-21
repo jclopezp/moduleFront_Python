@@ -22,10 +22,11 @@ header{
 
 .sectionAside{
     display: inline-block;
-    border: 5px solid red;
+    border: 5px dotted red;
     background-color: sandybrown;
     width: 20%;
-    height: 500px;
+    vertical-align: top;
+    height: 350px;
     margin: 15px 0px 15px 0px;
 }
 

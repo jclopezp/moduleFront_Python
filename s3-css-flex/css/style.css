@@ -1,0 +1,66 @@
+* {
+
+}
+
+.flex-container {
+border: 1px solid red;
+margin: 20px 0;
+height: 250px;
+display: flex;
+/* flex-direction: row; */
+flex-direction: row;
+}
+
+/* Clases de utilidad */
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-flex-between {
+    justify-content: space-between;
+}
+
+.justify-content-flex-around {
+    justify-content: space-around;
+}
+
+.justify-content-flex-evenly {
+    justify-content: space-evenly;
+}
+
+/* Eje secundario*/
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.flex-item {
+    width: 80px;
+    height: 50px;
+    background-color: salmon;
+}
+

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+}
+
+.section {
+    border: 1px solid red;
+    background-color: lightgrey;
+    
+    height: 200px;
+    margin: 0.5px 0;
+
+}
+
+h2 {
+    align-self: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: honeydew;
+    width: 40vw;
+    border: 1px solid black;
+    position: absolute;
+    top: 150px;
+    left: 30%;
+
+}

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos mobile 320px - 767px */
+
+.flex-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh; /* view port height*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+}
+
+.shape.color-1 {
+    background-color: pink;
+}
+
+.shape.color-2 {
+    background-color: blue;
+}
+
+.shape.color-3 {
+    background-color: red;
+}
+
+/* max width: 768px = 320 - 768px */
+/* min width: 768px = >768px hasta otro break point */
+@media only screen and (min-width: 768px) {
+    .flex-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: flex-start; */
+    }
+
+    .shape.color-1 {
+        width: 300px;
+        margin: 20px;
+        /* align-self: flex-end; */
+    }
+
+    .shape.color-2 {
+        width: 300px;
+        margin: 20px;
+        /* align-self: flex-end; */
+    }
+
+    .shape.color-3 {
+        width: 300px;
+        margin: 20px;
+        /* align-self: flex-end; */
+        align-content: flex-end;
+    }
+}
+
+/* Medium size: min width: >1024px  - hasta el siguiente break point */
+@media only screen and (min-width: 1024px) {
+    .flex-box {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .shape.color-1 {
+        height: 300px;
+        border-radius: 50%;
+        margin: unset;
+    }
+
+    .shape.color-2 {
+        height: 300px;
+        border-radius: 10%;
+        margin: unset;
+    }
+
+    .shape.color-3 {
+        height: 300px;
+        border-radius: 50%;
+        margin: unset;
+    }
+}
+
+.section-menu {
+    height: 100vh;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+#checked-menu {
+    display: block;
+}
+
+.menu {
+    background-color: rgb(200, 200, 201);
+    height: 0;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+.menu ul li:not(:last-of-type) {
+    border-bottom: 1px solid rgb(71, 73, 73);
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(88, 210, 28);
+    color: rgb(255, 255, 255);
+}
+
+.menu {
+    
+}
+
+#checked-menu:checked ~ .menu {
+    /* display: block; */
+    height: auto;
+    opacity: 1;
+}
+
+.icon-bar {
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu {
+        opacity: 1;
+        height: auto;
+    }
+    .icon-bar {
+        display: none;
+    }
+    
+    .menu ul {
+        display: flex;
+    }
+    .menu ul li {
+        border-right: 1px solid red;
+        flex-grow: 1; /* agranda a los elementos hijos */
+        text-align: center;
+    }
+}
+
+/* Position */
+

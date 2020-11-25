@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+/* estilos que van enfocados a mobile */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.square:first-of-type {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.square:nth-of-type(even) {
+    background-color: pink;
+}
+
+/* version tablet medium */
+@media only screen and (min-width: 768px) {
+    .square {
+        width: 200px;
+        border-radius: 20px;
+        margin: 20px 0;
+    }
+}
+
+/* version Desktop */
+@media only screen and (min-width: 1024px) {
+    .square:first-of-type {
+        display: block;
+    }
+
+    .square {
+        border-radius: 50px;
+    }
+}

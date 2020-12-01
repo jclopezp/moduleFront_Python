@@ -13,10 +13,8 @@
 .section {
     border: 1px solid red;
     background-color: lightgrey;
-    
     height: 200px;
     margin: 0.5px 0;
-
 }
 
 h2 {
